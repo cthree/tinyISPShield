@@ -53,7 +53,7 @@ ATtiny's for many projects. The ZIF if a 14 pin 3M "textool" 214-3339 part
 available from Digikey. It's under $20. Not the cheapest. It does however
 have 30um gold flash, 3x that of comparable parts in the Digikey catalog.
 I personally hate tools that suck so I opted for the better part, I only
-need one. Rework it as you please.
+need one and I don't want to do this more than once. Rework it as you please.
 
 The LEDs and limiting resistors are all optional. You can get away with
 as few parts as the PCB, ZIF, and a 0.100" header strip. I populated
