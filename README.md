@@ -56,9 +56,11 @@ I personally hate tools that suck so I opted for the better part, I only
 need one. Rework it as you please.
 
 The LEDs and limiting resistors are all optional. You can get away with
-as few parts as the PCB, ZIF, a 2 pin and 4 pin 0.100" header. I populated
+as few parts as the PCB, ZIF, and a 0.100" header strip. I populated
 2 pins on each corner of the Arduino header layout for stability and ease
 of alignment.
+
+C1 is for an optional 0.1uF ceramic bypass cap. I don't find it necessary.
 
 Development
 -----------
