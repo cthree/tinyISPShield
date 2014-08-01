@@ -63,6 +63,7 @@ of alignment.
 Development
 -----------
 
-If you wish to develop this project further please fork it on github.
+If you wish to develop this project further please fork it on 
+[github](https://github.com/cthree/tinyISPShield).
 
 
