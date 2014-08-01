@@ -1,14 +1,22 @@
 tinyISPShield
 =============
 
+** Important **
+This project is in development and presently untested. Operation is
+described as intended. This may not work at all, or worse, may damage your
+parts or equipment. All risks are yours alone.
+
 An Arduino UNO R3 Shield for programming ATtiny44/45/84/85 MCUs with Arduino 
 sketches.
 
 Arduino 1.0.5 comes with an example sketch named ArduinoISP. That sketch 
 turns an Arduino Uno into a sketch programmer for other Atmel MCUs.
 
-For more info on programming ATtiny series MCUs with Arduino sketches see
-http://...
+For more info on programming ATtiny series MCUs with Arduino sketches see 
+[High-low tech blog](http://highlowtech.org/?p=1695)
+
+Eagle CAD 6.5 Hobbist Edition used. Latest PCB available from 
+[OSHPark](https://oshpark.com/shared_projects/PF0k6TW9)
 
 Usage
 -----
@@ -42,7 +50,7 @@ Building
 
 I encourage you to build your own if you want to or find yourself using
 ATtiny's for many projects. The ZIF if a 14 pin 3M "textool" 214-3339 part
-available from Digikey. It's under $20 but not the cheapest. It does however
+available from Digikey. It's under $20. Not the cheapest. It does however
 have 30um gold flash, 3x that of comparable parts in the Digikey catalog.
 I personally hate tools that suck so I opted for the better part, I only
 need one. Rework it as you please.
@@ -51,4 +59,10 @@ The LEDs and limiting resistors are all optional. You can get away with
 as few parts as the PCB, ZIF, a 2 pin and 4 pin 0.100" header. I populated
 2 pins on each corner of the Arduino header layout for stability and ease
 of alignment.
+
+Development
+-----------
+
+If you wish to develop this project further please fork it on github.
+
 
