@@ -128,19 +128,19 @@
 </layers>
 <board>
 <plain>
-<text x="22.606" y="7.874" size="1.27" layer="21" font="vector" rot="R90">44/84</text>
-<text x="30.734" y="7.874" size="1.27" layer="21" font="vector" rot="R90">45/85</text>
-<text x="26.67" y="7.62" size="1.27" layer="21" font="vector" rot="R90">Pin 1</text>
-<wire x1="27.178" y1="7.112" x2="27.178" y2="13.208" width="0.254" layer="21"/>
-<wire x1="27.178" y1="13.208" x2="24.892" y2="13.208" width="0.254" layer="21"/>
-<wire x1="24.892" y1="13.208" x2="24.892" y2="7.112" width="0.254" layer="21"/>
-<wire x1="24.892" y1="7.112" x2="27.178" y2="7.112" width="0.254" layer="21"/>
+<text x="24.003" y="7.62" size="1.27" layer="21" font="vector" rot="R90">44/84</text>
+<text x="26.289" y="7.62" size="1.27" layer="21" font="vector" rot="R90">45/85</text>
+<text x="21.59" y="7.62" size="1.27" layer="21" font="vector" rot="R90">Pin 1</text>
+<wire x1="22.098" y1="7.112" x2="22.098" y2="13.208" width="0.254" layer="21"/>
+<wire x1="22.098" y1="13.208" x2="19.812" y2="13.208" width="0.254" layer="21"/>
+<wire x1="19.812" y1="13.208" x2="19.812" y2="7.112" width="0.254" layer="21"/>
+<wire x1="19.812" y1="7.112" x2="22.098" y2="7.112" width="0.254" layer="21"/>
 <dimension x1="22.098" y1="20.066" x2="22.098" y2="16.51" x3="22.098" y3="15.24" textsize="1.27" layer="21" dtype="leader"/>
 <dimension x1="29.972" y1="20.066" x2="29.972" y2="16.51" x3="29.972" y3="15.24" textsize="1.27" layer="21" dtype="leader"/>
 <text x="3.81" y="2.54" size="1.27" layer="21" font="vector" rot="R90">tinyISPShield</text>
 <text x="50.038" y="35.052" size="1.778" layer="21" font="vector" rot="R90">&gt;REV</text>
 <text x="5.334" y="2.794" size="0.8128" layer="21" font="vector" ratio="10" rot="R90">Erik Petersen 2014</text>
-<text x="18.796" y="5.334" size="1.016" layer="21" font="vector" ratio="10" rot="R90">Instructions:
+<text x="17.526" y="5.334" size="1.016" layer="21" font="vector" ratio="10" rot="R90">Instructions:
 1. Insert MCU
 2. Verify Pin 1
 3. Set Jumpers
@@ -189,6 +189,12 @@ Arduino UNO!
 <text x="44.831" y="12.192" size="1.016" layer="21" font="vector" rot="R90" align="bottom-center">Y</text>
 <text x="44.831" y="44.45" size="1.016" layer="21" font="vector" rot="R90" align="bottom-center">R</text>
 <text x="7.747" y="44.45" size="1.016" layer="21" font="vector" rot="R90" align="bottom-center">G</text>
+<wire x1="22.098" y1="15.24" x2="23.368" y2="15.24" width="0.127" layer="21"/>
+<wire x1="23.368" y1="15.24" x2="23.368" y2="13.589" width="0.127" layer="21"/>
+<wire x1="29.972" y1="15.24" x2="25.654" y2="15.24" width="0.127" layer="21"/>
+<wire x1="25.654" y1="15.24" x2="25.654" y2="13.589" width="0.127" layer="21"/>
+<text x="34.925" y="17.399" size="1.27" layer="21" font="vector" ratio="10" rot="R90">ON</text>
+<text x="35.052" y="4.318" size="1.27" layer="21" font="vector" ratio="10" rot="R90">OFF</text>
 </plain>
 <libraries>
 <library name="C3-Connector">
@@ -1479,9 +1485,39 @@ We've spent an enormous amount of time creating and checking these footprints an
 </package>
 </packages>
 </library>
+<library name="C3-Switches">
+<packages>
+<package name="CL-SB-12B">
+<description>Copal CL-SB-12B SPDT Slide Switch Gullwing SMD</description>
+<wire x1="-4.25" y1="-1.75" x2="4.25" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="4.25" y1="-1.75" x2="4.25" y2="1.75" width="0.127" layer="51"/>
+<wire x1="4.25" y1="1.75" x2="-4.25" y2="1.75" width="0.127" layer="51"/>
+<wire x1="-4.25" y1="1.75" x2="-4.25" y2="-1.75" width="0.127" layer="51"/>
+<smd name="C" x="0" y="2.75" dx="1.27" dy="2.54" layer="1"/>
+<smd name="3" x="2.5" y="-2.75" dx="1.27" dy="2.54" layer="1"/>
+<smd name="1" x="-2.5" y="-2.75" dx="1.27" dy="2.54" layer="1"/>
+<wire x1="0" y1="0.75" x2="1.5" y2="0.75" width="0.127" layer="51"/>
+<wire x1="1.5" y1="0.75" x2="1.5" y2="-0.75" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-0.75" x2="0" y2="-0.75" width="0.127" layer="51"/>
+<wire x1="0" y1="-0.75" x2="0" y2="0.75" width="0.127" layer="51"/>
+<wire x1="0" y1="0.75" x2="-1.5" y2="0.75" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="0.75" x2="-1.5" y2="-0.75" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-0.75" x2="0" y2="-0.75" width="0.127" layer="51"/>
+<text x="-5" y="-2" size="1.27" layer="25" font="vector" ratio="15" rot="R90">&gt;NAME</text>
+<text x="6" y="-2" size="1.27" layer="27" font="vector" ratio="10" rot="R90">&gt;VALUE</text>
+<wire x1="-3.5" y1="-1.75" x2="-4.25" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-4.25" y1="-1.75" x2="-4.25" y2="1.75" width="0.127" layer="21"/>
+<wire x1="-4.25" y1="1.75" x2="-1" y2="1.75" width="0.127" layer="21"/>
+<wire x1="1" y1="1.75" x2="4.25" y2="1.75" width="0.127" layer="21"/>
+<wire x1="4.25" y1="1.75" x2="4.25" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="4.25" y1="-1.75" x2="3.5" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.75" x2="-1.5" y2="-1.75" width="0.127" layer="21"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
-<attribute name="REV" value="A"/>
+<attribute name="REV" value="B"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -1687,8 +1723,13 @@ Please make sure your boards conform to these design rules.</description>
 <element name="J3" library="C3-Connector" package="1X03_NO_SILK" value="TSW-103-07-L-SNO_SILK" x="36.83" y="40.64" smashed="yes" rot="R90"/>
 <element name="J1" library="C3-Connector" package="1X03_NO_SILK" value="TSW-103-07-L-SNO_SILK" x="29.21" y="40.64" smashed="yes" rot="R90"/>
 <element name="J2" library="C3-Connector" package="1X03_NO_SILK" value="TSW-103-07-L-SNO_SILK" x="33.02" y="40.64" smashed="yes" rot="R90"/>
-<element name="C1" library="SparkFun-Capacitors" package="CAP-PTH-SMALL" value="0.1uF" x="24.13" y="17.78" smashed="yes">
-<attribute name="VALUE" x="23.114" y="18.923" size="1.27" layer="27" font="vector" ratio="10"/>
+<element name="C1" library="SparkFun-Capacitors" package="CAP-PTH-SMALL" value="0.1uF" x="25.4" y="16.51" smashed="yes" rot="R90">
+<attribute name="NAME" x="24.257" y="17.018" size="1.016" layer="25" font="vector" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="27.559" y="18.034" size="1.27" layer="27" font="vector" ratio="10" rot="R90" align="bottom-center"/>
+</element>
+<element name="SW1" library="C3-Switches" package="CL-SB-12B" value="CL-SB-12B" x="34.29" y="12.446" smashed="yes" rot="R90">
+<attribute name="NAME" x="36.369" y="14.065" size="1.016" layer="25" font="vector" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="36.29" y="18.446" size="1.27" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 </elements>
 <signals>
@@ -1853,30 +1894,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="42.291" y1="44.577" x2="43.688" y2="43.18" width="0.254" layer="1"/>
 <wire x1="43.688" y1="43.18" x2="45.974" y2="43.18" width="0.254" layer="1"/>
 </signal>
-<signal name="+5V">
-<contactref element="U1" pad="1"/>
-<contactref element="U$8" pad="5V"/>
-<contactref element="U$8" pad="ICSP-5V"/>
-<contactref element="U1" pad="11"/>
-<wire x1="25.4" y1="2.54" x2="25.4" y2="16.51" width="0.4064" layer="1"/>
-<wire x1="22.225" y1="24.13" x2="22.225" y2="19.685" width="0.4064" layer="1"/>
-<wire x1="53.467" y1="30.48" x2="53.467" y2="31.369" width="0.4064" layer="1"/>
-<wire x1="53.467" y1="31.369" x2="52.832" y2="32.004" width="0.4064" layer="1"/>
-<wire x1="52.832" y1="32.004" x2="49.784" y2="32.004" width="0.4064" layer="1"/>
-<wire x1="49.784" y1="32.004" x2="49.149" y2="31.369" width="0.4064" layer="1"/>
-<wire x1="49.149" y1="31.369" x2="49.149" y2="5.461" width="0.4064" layer="1"/>
-<wire x1="49.149" y1="5.461" x2="48.514" y2="4.826" width="0.4064" layer="1"/>
-<wire x1="48.514" y1="4.826" x2="27.686" y2="4.826" width="0.4064" layer="1"/>
-<wire x1="27.686" y1="4.826" x2="25.4" y2="2.54" width="0.4064" layer="1"/>
-<wire x1="22.225" y1="24.13" x2="22.225" y2="27.305" width="0.4064" layer="1"/>
-<wire x1="22.225" y1="27.305" x2="22.86" y2="27.94" width="0.4064" layer="1"/>
-<wire x1="22.86" y1="27.94" x2="27.94" y2="27.94" width="0.4064" layer="1"/>
-<wire x1="27.94" y1="27.94" x2="29.845" y2="29.845" width="0.4064" layer="1"/>
-<wire x1="29.845" y1="31.75" x2="29.845" y2="29.845" width="0.4064" layer="1"/>
-<contactref element="C1" pad="1"/>
-<wire x1="25.4" y1="16.51" x2="24.13" y2="17.78" width="0.4064" layer="1"/>
-<wire x1="22.225" y1="19.685" x2="24.13" y2="17.78" width="0.4064" layer="1"/>
-</signal>
 <signal name="N$1">
 <contactref element="READY" pad="K"/>
 <contactref element="R1" pad="2"/>
@@ -1963,6 +1980,42 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="30.734" y1="37.465" x2="30.734" y2="42.545" width="0.254" layer="1"/>
 <wire x1="34.925" y1="31.75" x2="34.925" y2="36.195" width="0.254" layer="1"/>
 <wire x1="34.925" y1="36.195" x2="34.29" y2="36.83" width="0.254" layer="1"/>
+</signal>
+<signal name="VCC">
+<contactref element="U$8" pad="ICSP-5V"/>
+<contactref element="C1" pad="1"/>
+<wire x1="53.467" y1="30.48" x2="53.467" y2="31.369" width="0.4064" layer="1"/>
+<wire x1="53.467" y1="31.369" x2="52.832" y2="32.004" width="0.4064" layer="1"/>
+<wire x1="52.832" y1="32.004" x2="49.784" y2="32.004" width="0.4064" layer="1"/>
+<wire x1="49.784" y1="32.004" x2="49.149" y2="31.369" width="0.4064" layer="1"/>
+<contactref element="U1" pad="1"/>
+<contactref element="U1" pad="11"/>
+<wire x1="22.86" y1="16.51" x2="22.225" y2="17.145" width="0.4064" layer="1"/>
+<wire x1="22.225" y1="17.145" x2="22.225" y2="24.13" width="0.4064" layer="1"/>
+<wire x1="22.225" y1="24.13" x2="22.225" y2="27.305" width="0.4064" layer="1"/>
+<wire x1="22.225" y1="27.305" x2="22.86" y2="27.94" width="0.4064" layer="1"/>
+<wire x1="22.86" y1="27.94" x2="27.94" y2="27.94" width="0.4064" layer="1"/>
+<wire x1="27.94" y1="27.94" x2="29.845" y2="29.845" width="0.4064" layer="1"/>
+<wire x1="29.845" y1="31.75" x2="29.845" y2="29.845" width="0.4064" layer="1"/>
+<contactref element="SW1" pad="3"/>
+<wire x1="49.149" y1="31.369" x2="49.149" y2="9.525" width="0.4064" layer="1"/>
+<wire x1="49.149" y1="9.525" x2="48.514" y2="8.89" width="0.4064" layer="1"/>
+<wire x1="48.514" y1="8.89" x2="43.815" y2="8.89" width="0.4064" layer="1"/>
+<wire x1="43.815" y1="8.89" x2="43.18" y2="9.525" width="0.4064" layer="1"/>
+<wire x1="43.18" y1="9.525" x2="43.18" y2="14.311" width="0.4064" layer="1"/>
+<wire x1="43.18" y1="14.311" x2="42.545" y2="14.946" width="0.4064" layer="1"/>
+<wire x1="42.545" y1="14.946" x2="37.04" y2="14.946" width="0.4064" layer="1"/>
+<wire x1="37.04" y1="14.946" x2="26.035" y2="14.946" width="0.4064" layer="1"/>
+<wire x1="26.035" y1="14.946" x2="25.4" y2="15.581" width="0.4064" layer="1"/>
+<wire x1="25.4" y1="15.581" x2="25.4" y2="16.51" width="0.4064" layer="1"/>
+<wire x1="25.4" y1="16.51" x2="22.86" y2="16.51" width="0.4064" layer="1"/>
+</signal>
+<signal name="+5V">
+<contactref element="SW1" pad="C"/>
+<contactref element="U$8" pad="5V"/>
+<wire x1="25.4" y1="2.54" x2="25.4" y2="11.811" width="0.4064" layer="1"/>
+<wire x1="25.4" y1="11.811" x2="26.035" y2="12.446" width="0.4064" layer="1"/>
+<wire x1="26.035" y1="12.446" x2="31.54" y2="12.446" width="0.4064" layer="1"/>
 </signal>
 </signals>
 </board>
